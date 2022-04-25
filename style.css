@@ -465,7 +465,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: rgb(206, 203, 203);
 }
 
 button {
@@ -516,7 +516,7 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
-    width: 50%;
+    width: 70%;
 }
 
 .scrollToTop {
@@ -525,7 +525,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -708,6 +708,9 @@ p {
     font-weight: 700;
 }
 
+.flex {display: flex;
+justify-content: space-around;}
+
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
@@ -717,7 +720,6 @@ p {
     font-size: 22px;
     line-height: 1.4em;
 }
-
 
 
 h2 {
@@ -840,10 +842,12 @@ h4 {
     background-image: url("img/image-de-presentation-modif.jpg");
 }
 
-@media (max-width: 1024px) {
+
+
+@media (min-width: 1024px) {
     .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
@@ -852,9 +856,10 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
-}
 
-@media (max-width: 992px) and (min-width: 768px) {
+ 
+
+@media (max-width: 992px)  and (min-width: 768px){
     .navbar .nav {
         max-width: 80%
     }
@@ -863,7 +868,7 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1054,4 +1059,4 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
+}}
