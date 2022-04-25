@@ -842,13 +842,13 @@ h4 {
     background-image: url("img/image-de-presentation-modif.jpg");
 }
 
+.bloc {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
-
-@media (min-width: 1024px) {
-    .bloc {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+@media (max-width: 1024px) {
+    
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
@@ -874,7 +874,7 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
